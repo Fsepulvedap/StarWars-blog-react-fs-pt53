@@ -34,19 +34,19 @@ function Home() {
             <h1 className="text-warning p-5 text-center mt-3 ">Planets</h1>
             <div className="container d-flex overflow-auto custom-scrollbar">
                 {planets && planets.map((planet) => (
-                    <Card key={planet.uid} name={planet.name} uid={planet.uid} tipo={"Planet"}/>
+                    <Card key={planet.uid} name={planet.name} uid={planet.uid} tipo={"Planet"} />
                 ))}
             </div>
             <h1 className="text-warning p-5 text-center">Vehicles</h1>
             <div className="container d-flex overflow-auto custom-scrollbar">
-                {vehicles && vehicles.map((vehicle) =>(
-                   <Card key={vehicle.uid} name={vehicle.name} uid={vehicle.uid} tipo={"Vehicle"}/>
+                {vehicles && vehicles.map((vehicle) => (
+                    <Card key={vehicle.uid} name={vehicle.name} uid={vehicle.uid} tipo={"Vehicle"} />
                 ))}
             </div>
             <h1 className="text-warning p-5 text-center">Characters</h1>
             <div className="container d-flex overflow-auto mb-5 custom-scrollbar">
                 {characters && characters.map((character) => (
-                    <Card key={character.uid} name={character.name} uid={character.uid} tipo={"Character"}/>
+                    <Card key={character.uid} name={character.name} uid={character.uid} tipo={"Character"} />
                 ))}
             </div>
         </>

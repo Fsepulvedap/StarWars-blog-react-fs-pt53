@@ -6,7 +6,7 @@ import { useNavigate, } from "react-router-dom";
 const Favorites = () => {
     const { favActions, favs } = useContext(FavContext)
     const navigate = useNavigate()
-    
+
 
 
 
@@ -23,8 +23,8 @@ const Favorites = () => {
 
                     <ul className="custom-list">
                         {favs && favs.map((fav, index) => (
-                            <p key={index} ><button className="btn btn-secondary d-flex justify-content-between mx-auto text-black my-2 custom-element" onClick={() => navigate("/detail/" + fav.uid +"/" +fav.tipo)} href="#">{fav.name}<i className="fa-solid fa-trash"  
-                            onClick={(e) => {e.stopPropagation();favActions({ type: "delete", payload: { uid: fav.uid, name: fav.name, tipo: fav.tipo } })}}></i></button></p>
+                            <p key={index} ><button className="btn btn-secondary d-flex justify-content-between mx-auto text-black my-2 custom-element" onClick={() => navigate("/detail/" + fav.uid + "/" + fav.tipo)} href="#">{fav.name}<i className="fa-solid fa-trash"
+                                onClick={(e) => { e.stopPropagation(); favActions({ type: "delete", payload: { uid: fav.uid, name: fav.name, tipo: fav.tipo } }) }}></i></button></p>
                         ))}
                     </ul>
                 </div >

@@ -9,7 +9,7 @@ const FavReducer = (state, action) => {
     case "add":
       return [...state, action.payload];
     case "delete":
-      return state.filter ((element) => element.uid !== action.payload.uid || element.tipo !== action.payload.tipo) 
+      return state.filter((element) => element.uid !== action.payload.uid || element.tipo !== action.payload.tipo)
     case 'clear':
       return []
     default:

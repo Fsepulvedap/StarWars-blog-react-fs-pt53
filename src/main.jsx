@@ -7,7 +7,7 @@ import { FavProvider } from './store/FavContext.jsx'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <FavProvider>
-    <App />
+      <App />
     </FavProvider>
   </StrictMode>,
 )
